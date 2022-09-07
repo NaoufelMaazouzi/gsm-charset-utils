@@ -1,5 +1,7 @@
 
-import { isGsmChar, getSmsCharCountInfo, replaceNonGsmChars } from './SmsUtil';
+const {
+  isGsmChar, getSmsCharCountInfo, replaceNonGsmChars
+} = require('./SmsUtil');
 
 /**
  * Returns an object with the following values:
@@ -43,7 +45,7 @@ function removeNonGsmChars(msgText, replacementChar='?') {
     return replaceNonGsmChars(msgText, replacementChar);
 }
 
-export {
+module.exports = {
     getCharCount,
     isGsmChar,
     removeNonGsmChars

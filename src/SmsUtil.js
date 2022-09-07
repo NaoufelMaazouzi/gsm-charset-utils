@@ -544,7 +544,7 @@ function getSmsCharCountInfo(text) {
 }
 
 
-export {
+module.exports = {
     //isStdGsmChar,
     //isExtGsmChar,
     isGsmChar,
